@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:400,700');
+.header-container {
+    position: absolute;
+    width: 100%;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    
+    h1{
+        font-size: 100px;
+        color: #555555;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 50px;
+    }
+}
