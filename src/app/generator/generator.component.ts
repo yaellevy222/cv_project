@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import{ DataTransferService } from "./../Services/data-transfer.service"
 
 @Component({
   selector: 'app-generator',
   templateUrl: './generator.component.html',
   styleUrls: ['./generator.component.css']
 })
-export class GeneratorComponent implements OnInit {
+export class GeneratorComponent{
 
-  constructor() { }
+  constructor(private dataService: DataTransferService) { }
 
-  ngOnInit() {
-  }
-
-}
+;}

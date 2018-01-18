@@ -10,6 +10,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './generator/form/form.component';
 import { TemplateComponent } from './generator/template/template.component';
 
+import {DataTransferService} from './Services/data-transfer.service'
+
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 const appRoutes: Routes = [
 
@@ -33,9 +36,12 @@ const appRoutes: Routes = [
      RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } 
-    )
+    ),
+   MatDatepickerModule,
+   MatNativeDateModule
   ],
-  providers: [],
+  exports: [MatDatepickerModule, MatNativeDateModule],
+  providers: [DataTransferService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
