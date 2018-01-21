@@ -4,7 +4,7 @@ import{ DataTransferService } from "./../Services/data-transfer.service"
 @Component({
   selector: 'app-generator',
   templateUrl: './generator.component.html',
-  styleUrls: ['./generator.component.css']
+  styleUrls: ['./generator.component.scss']
 })
 export class GeneratorComponent{
 

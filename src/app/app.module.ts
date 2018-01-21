@@ -11,8 +11,13 @@ import { FormComponent } from './generator/form/form.component';
 import { TemplateComponent } from './generator/template/template.component';
 
 import {DataTransferService} from './Services/data-transfer.service'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatDatepickerModule, 
+         MatNativeDateModule,
+         MatFormFieldModule, 
+         MatInputModule,
+        } from '@angular/material';
 
 const appRoutes: Routes = [
 
@@ -38,9 +43,17 @@ const appRoutes: Routes = [
       { enableTracing: true } 
     ),
    MatDatepickerModule,
-   MatNativeDateModule
+   MatFormFieldModule,
+   MatNativeDateModule,
+   MatInputModule,
+   BrowserAnimationsModule
   ],
-  exports: [MatDatepickerModule, MatNativeDateModule],
+  exports: [MatDatepickerModule,
+     MatNativeDateModule,
+     MatFormFieldModule,
+     MatInputModule, 
+     BrowserAnimationsModule
+  ],
   providers: [DataTransferService],
   bootstrap: [AppComponent]
 })
