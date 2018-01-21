@@ -1,9 +1,14 @@
-<input #name placeholder="Your name" (input)="setName(name.value)">
-<input #birthdate placeholder="Birthdate" (input)="setBirthdate(birthdate.value)">
-
+<mat-form-field class="example-full-width">
+    <input #name matInput placeholder="Your name" (input)="setName(name.value)">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+    <input #birthdate matInput placeholder="Birthdate" (input)="setBirthdate(birthdate.value)">
+</mat-form-field>
 <mat-form-field>
     <input matInput [matDatepicker]="picker" placeholder="Choose a date">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-<input #city placeholder="City" (input)="setCity(city.value)">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+    <input #city matInput placeholder="City" (input)="setCity(city.value)">
+</mat-form-field>
